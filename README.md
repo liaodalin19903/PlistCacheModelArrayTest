@@ -8,5 +8,13 @@ Localize model array.  本地化model 数组测试Demo
 
 退出程序时候（在appDelegate代理方法中）删除数据.
 
+###注意事项
+
+如果在实际应用中，我们使用页面缓存，我们可以给一个vc全局变量，判断页面的数据是否加载了缓存数据，如果有，那么上拉加载的时候，就可以让dataSource先removeAllObjects，再进行加载.并设置此全局变量为No.
+
+
+
+
+
 
 
